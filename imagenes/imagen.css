@@ -1,0 +1,19 @@
+body {
+
+	background-image:url(estudiar_6.jpg);
+	-webkit-background-size: 100% 100%;           /* Safari 3.0 */
+     -moz-background-size: 100% 100%;           /* Gecko 1.9.2 (Firefox 3.6) */
+       -o-background-size: 100% 100%;           /* Opera 9.5 */
+          background-size: 100% 100%;           /* Gecko 2.0 (Firefox 4.0) and other CSS3-compliant browsers */
+ 
+  -moz-border-image: url(estudiar_6.jpg) 0;  
+
+width:100%;
+height:100%;
+background-attachment: fixed;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-size: 100% 100%;
+
+}

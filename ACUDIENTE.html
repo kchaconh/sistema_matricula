@@ -1,0 +1,78 @@
+<html>
+<head><title>MANEJO DE MATRICULAS I.T.I.A.D.</title>
+</head>
+
+<center>
+<h1>
+FORMULARIO DE ACUDIENTE
+</h1>
+
+<body background = "colegio.jpg">
+<table border =1>
+<form action="ACUDIENTE.php" method="post" onsubmit="return revisar()">
+
+<TR>
+<TD>
+<h3>Documento:</h3>
+<input type="text" name="Documento_a" />
+</TD>
+
+<TD>
+<h3>Apellidos:</h3>
+<input type="text" name="Apellidos_a" />
+</TD>
+
+<TD>
+<h3>Nombres:</h3>
+<input type="text" name="Nombres_a" />
+</TD>
+</TR>
+
+<TR>
+<TD>
+<h3>Genero:</h3>
+<SELECT name="Genero_a">
+<OPTION SELECTED>Masculino
+<OPTION>Femenino</OPTION>
+</SELECT>
+</TD>
+
+<TD>
+<h3>Parentesco:</h3>
+<SELECT name="Parentesco">
+<OPTION SELECTED>Padre
+<OPTION >Madre</OPTION>
+<OPTION >Familiar</OPTION>
+<OPTION >Otro</OPTION></SELECT>
+</TD>
+
+<TD>
+<h3>Puntaje de sisben:</h3>
+<input type="text" name="Puntaje_Sisben_a" />
+</TD>
+</TR>
+
+<TR>
+<TD>
+<h3>Dirección:</h3>
+<input type="text" name="Direccion" />
+</TD>
+
+<TD>
+<h3>Teléfono:</h3>
+<input type="text" name="Telefono" />
+</TD>
+
+<TD>
+<h3>Ocupación:</h3>
+<input type="text" name="Ocupacion" />
+</TD>
+</TR>
+</table>
+
+<br>
+<input type="submit" value="Enviar"/>
+</center>
+</form>
+</body>
+</html>
