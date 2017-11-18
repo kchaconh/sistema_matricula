@@ -24,9 +24,7 @@
 
         $Puntaje_Sisben     = $_POST['Puntaje_Sisben'];
 
-        $Documento_acudiente= $_POST['Documento_acudiente'];
-
-        $Fecha_Registro     = date("y/m/d");
+        $Fecha_Registro     = $_POST['Fecha_Nacimiento'];
 
         $Compromiso         = $_POST['Compromiso'];
 
@@ -82,13 +80,13 @@ if($validar==1){
 header("location: ENTRADA.html");
 }
 elseif($validar==0){
-header("location: ACUDIENTE.html");
+header("location: Acudiente_1.php?Documento=".$Numero_Documento." ");/// $Numero_Documento
 }
 
 
 		echo "<br>";
 		echo "<br>";
-		echo "<form action= ACUDIENTE.html method= post>";
+		echo "<form action= Acudiente_1.php method= post>";
 		echo "<input type= submit value= Acudiente>";
 		echo "</form>";
 	       echo "</center>";

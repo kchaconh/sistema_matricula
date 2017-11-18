@@ -22,7 +22,7 @@ INSTITUTO TECNICO ISAIAS ARDILA DIAZ
 
 <input type="image" name="GNU" alt="GNU" src="bandera.png" WIDTH=10% HEIGHT=20 />
 
-"FORMANDO DE MANERA INTEGRAL"
+"FORMANDO DE MANERA INTEGRAL" 
 
 <input type="image" name="GNU" alt="GNU" src="bandera.png" WIDTH=10% HEIGHT=20/>
 
@@ -30,34 +30,34 @@ INSTITUTO TECNICO ISAIAS ARDILA DIAZ
 </font>
 </h2>
 
-<h1>
-SOFTWARE DE MATRICULAS
-</h1>
-<h2>
-BIENVENIDO
-</h2>
+				<h1> <small>SOFTWARE DE MATRICULAS <BR>BIENVENIDO</small> </h1>
 
-<input type="image" name="GNU" alt="GNU" src="escudo.jpg" /><br><br>
 
+				<img src="escudo.jpg" class="img-thumbnail">
+
+<BR>
 <br>
-<form action="ESTUDIANTE.html" method="post">
-<input type="submit" value= "Registrar nuevo estudiante"/>
-</form>
 
-<br>
-<form action="CONSULTAS.html" method="post">
-<input type="submit" value= "Consultar datos de los estudiantes"/>
-</form>
+					<div class="btn-group-vertical">
 
-<br>
-<form action="ELIMINAR.html" method="post">
-<input type="submit" value= "Eliminar: estudiante / acudiente / administrador"/>
-</form>
+						<form action="ESTUDIANTE.html" method="post">
+                      	<button type="submit" class="btn btn-default ">Registrar nuevo estudiante</button>
+                       </form>
+                      <form action="CONSULTAS.php" method="post">
+                      	<button type="submit"   class="btn btn-default">Consultar datos de los estudiantes</button>
+                       </form>
+                       <form action="ELIMINAR.php" method="post">
+                      	<button type="submit"   class="btn btn-default ">Eliminar: estudiante / acudiente / administrador</button>
+                       </form>
 
-<br>
-<form action="index.html" method="post">
-<input type="submit" value= "Cerrar sesion"/>
-</form>
+                       <form action="index.html" method="post">
+						<button type="submit" value= "Cerrar sesion" class="btn btn-default glyphicon glyphicon-off"/></button>
+						</form>
+                    </div>
+
+
+
+
 
 </center>
 </body>

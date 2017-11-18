@@ -12,14 +12,14 @@ $docu=$_POST['Numero_Documento'];
                 echo "<br>";
 				
 $consulta=$db->consulta("DELETE 
-                        FROM acudiente 
-						WHERE acudiente.Documento_a = '$docu'");
+                        FROM estudiante
+						WHERE estudiante.Numero_Documento = '$docu'");
 
 		echo "<br>";
 		echo "<br>";
 		
 
-        echo "<form action= ELIMINAR.html method= post>";
+        echo "<form action= ELIMINAR.php method= post>";
 		echo "<input type= submit value= Anterior>";
 		echo "</form>";
 

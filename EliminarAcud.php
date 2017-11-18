@@ -19,7 +19,7 @@ $consulta=$db->consulta("DELETE
 		echo "<br>";
 		
 
-        echo "<form action= ELIMINAR.html method= post>";
+        echo "<form action= ELIMINAR.php method= post>";
 		echo "<input type= submit value= Anterior>";
 		echo "</form>";
 

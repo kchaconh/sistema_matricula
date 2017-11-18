@@ -2,26 +2,21 @@
 	include("MYSQL.php");
  	$db=new MySQL();
 
-	
+        $Documento_est    = $_POST['Documento_est'];
         $Documento_a      = $_POST['Documento_a'];
-
         $Apellidos_a      = $_POST['Apellidos_a'];
-
         $Nombres_a        = $_POST['Nombres_a'];
-
-        $Genero_a         = $_POST['Género_a'];
-
+        $Genero_a         = $_POST['Genero_a'];
         $Parentesco       = $_POST['Parentesco'];
-
         $Puntaje_Sisben_a = $_POST['Puntaje_Sisben_a'];
+        $Direccion        = $_POST['Direccion'];
+        $Telefono         = $_POST['Telefono'];
+        $Ocupacion        = $_POST['Ocupacion'];
 
-        $Direccion        = $_POST['Dirección'];
+        echo $Documento_est ;
 
-        $Telefono         = $_POST['Teléfono'];
-
-        $Ocupacion        = $_POST['Ocupación'];
-
-		
+	$consulta1 = $db->consulta("UPDATE estudiante SET Documento_a='".$Documento_a ."' WHERE Numero_Documento='".$Documento_est."'");
+        echo $consulta1;
 
 	$consulta = $db->consulta("INSERT INTO acudiente VALUES(
 '$Documento_a',
@@ -30,17 +25,17 @@
 
 '$Nombres_a',
 
-'$Género_a',
+'$Genero_a',
 
 '$Parentesco',
 
 '$Puntaje_Sisben_a',
 
-'$Dirección',
+'$Direccion',
 
-'$Teléfono',
+'$Telefono',
 
-'$Ocupacin')");
+'$Ocupacion')");
 
 header("location: ENTRADA.html");
 
